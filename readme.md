@@ -1,7 +1,10 @@
 # ASSET
 concisely known as **Analysis** that is super **Superb**, calculated using **Stock** and cash **Entry Trackers** (ASSET)
+### [API link]: https://asset-calculator.herokuapp.com/
 
-### [API link]: https://pfinancer.herokuapp.com/
+![enter image description here](https://wallpapercave.com/wp/wp6539056.jpg)
+
+
 
 ## Project Overview
 
@@ -150,7 +153,7 @@ Get a detailed list of all associated stock transactions with the user
 #### POST
 Add a new stock transaction. 
 Required data fields:
-```
+```json
 {
     "date" //"yyyy-mm-dd"
     "ticker",
@@ -176,7 +179,7 @@ Get a detailed list of all associated cash entries with the user
 Add a new cash entry.
 
 Required fields:
-```
+```json
 {
 	"date" // "yyyy-mm-dd"
 	"single_entries": [
@@ -207,7 +210,7 @@ Get analysis on financial performance between any two dates, and a given currenc
 - Raw Non Market Growth (ie raw total growth - raw profit and loss)
 
 Required fields:
-```
+```json
 {
 	"date_bef" // yyyy-mm-dd
 	"date_aft" // yyyy-mm-dd, must be after date_bef
